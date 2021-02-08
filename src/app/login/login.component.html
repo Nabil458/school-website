@@ -1,0 +1,30 @@
+
+
+        <img id="img" src="https://www.freestudy.com/wp-content/uploads/2019/06/Free-Online-Computer-Courses-for-International-Students-800x600.jpg">
+
+    <form class="box" action="login.html" method="post" #allowiden="ngForm" (ngSubmit)="onSubmit(allowiden)">
+        <div class="alert alert-danger" *ngIf="error!=''">
+            <p>{{error}}</p>
+        </div>
+        <h2> Service d'authentification</h2><br>
+
+        <input type="text" name="email" placeholder="Identifiant ou E-mail" class="login" ngModel required email>
+        <input type="password" name="password" placeholder="Mot de passe" class="password" ngModel required minlength="8">
+
+        <label class="checkbox"> <a href="new_password.html">Mot de passe oublié ? </a></label><br>
+
+        <label class="checkbox"> <input type="checkbox"> Restez connecté</label><br>
+        <!--<input type="submit" name="" value="SE CONNECTER" class="login-submit" [disabled]="!allowiden">-->
+        <button class="login-submit" type="submit" [disabled]="!allowiden.valid">SE CONNECTER</button>
+        <p>Vous n'avez pas encore de compte ?
+            <a href="/signup">Inscrivez-vous </a>
+        </p>
+    </form>
+<!---------footer---------->
+<section id="footer">
+  <div class="container text-center">
+      <p>Made By me<i class="gg-code-climate"></i></p>
+  </div>
+</section>
+
+

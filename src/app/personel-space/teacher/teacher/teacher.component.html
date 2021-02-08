@@ -1,0 +1,110 @@
+
+          <div class="margin">
+          <h1>Contacter un enseignant</h1>
+          <!--------------------team---------------------------->
+         <form class="contact-form"
+              (ngSubmit)="onSubmit()"
+              #data="ngForm">
+
+              <div class="radio" *ngFor="let gender of genders">
+                <input
+                    type="radio"
+                    name="gender"
+                    ngModel
+                    [value]="gender"
+                    required
+                    >
+
+                  {{ gender }}
+                </div>
+
+              <div class="form-group">
+              <input type="text"
+                     class="form-control"
+                     placeholder="Your name"
+                     id="name"
+                     ngModel
+                     name="name"
+                     required
+                    >
+
+            </div>
+
+            <div class="form-group">
+             <input type="number"
+                    class="form-control"
+                    placeholder="Phone no."
+                    ngModel
+                    name="Phone"
+                    required
+                    minlength="10"
+                    >
+
+           </div>
+
+           <div class="form-group">
+             <input type="email"
+                    class="form-control"
+                    placeholder="Email id"
+                    ngModel
+                    name="email"
+                    required
+                    email
+                    #email="ngModel">
+            <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid email!</span>
+            </div>
+
+           <div class="form-group">
+            <label for="matiére">Quelle matiére?</label>
+            <select id="matiére"
+                    class="form-control"
+                    ngModel="matiere"
+                    name="matiere"
+                    required
+                    >
+
+              <option value="Math">Mathématique</option>
+              <option value="Physique">Physique</option>
+              <option value="Science">Science</option>
+              <option value="litérature">litérature</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <input type="Class-grade"
+                   class="form-control"
+                   placeholder="Class grade"
+                   ngModel
+                   name="grade"
+                   required
+                   >
+
+          </div>
+
+           <div class="form-group">
+             <textarea class="form-control"
+                       name="question"
+                       rows="4"
+                       placeholder="Tap your question here"
+                       [(ngModel)]="question"></textarea>
+           </div>
+
+           <!--<div class="form-group">
+            <span>Choose File</span>
+           <app-upload-file></app-upload-file>
+          </div>-->
+
+            <button type="submit"
+                    class="btn btn-primary"
+                    [disabled]="!data.valid">
+                    Send a Message</button>
+
+          </form>
+        </div>
+
+
+
+
+
+
+

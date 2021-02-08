@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+#img {
+    position: absolute;
+    right: 0;
+    bottom: 200px;
+    top: 0px;
+    min-width: 100%;
+    z-index: -1;
+    height: 750px;
+    width: auto;
+}
+
+/*********************************BOX********************************/
+
+.box {
+    width: 350px;
+    padding: 10px 30px 5px 30px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    bottom: 35%;
+    transform: translate(-50%, 50%);
+    background: rgb(223, 219, 219);
+    text-align: center;
+    border-radius: 9%;
+}
+
+.box h2 {
+    color: rgb(80, 78, 78);
+    font-weight: 300;
+    border-bottom: 1px solid rgba(15, 15, 15, 0.3);
+    font-family: 'Oswald';
+}
+
+.box h4 {
+    color: rgb(80, 78, 78);
+    font-weight: 300;
+    /* border-bottom: 1px solid rgba(15, 15, 15, 0.3); */
+    font-family: 'Oswald';
+}
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.password1,
+.email1,
+.first-name1,
+.last-name1,
+.Identifiant1 {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    border-bottom: 2px solid rgb(141, 138, 138);
+    padding: 8px 15px;
+    width: 200px;
+    outline: none;
+    border-radius: 0;
+    transition: 0.25s;
+}
+
+.password1:focus,
+.email1:focus,
+.first-name1:focus,
+.last-name1:focus,
+.Identifiant1:focus {
+    width: 300px;
+    border-color: #2946ec;
+}
+
+.login,
+.password {
+    border: 0;
+    background: rgb(224, 233, 235);
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #56CCF2;
+    padding: 8px 15px;
+    width: 200px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.login:focus,
+.password:focus {
+    width: 300px;
+    border-color: #2946ec;
+}
+
+.checkbox {
+    font-size: 11px;
+    float: left;
+    padding-left: 57px;
+    font-weight: 400;
+    margin-top: -15px;
+}
+
+.login-submit,
+.signup-submit {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid #56CCF2;
+    padding: 10px 50px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    color: rgb(80, 78, 78);
+    font-weight: 200px;
+}
+
+.login-submit:hover,
+.signup-submit:hover {
+    border-color: rgb(141, 138, 138);
+    background-color: #c2e7f3;
+}
+
+
+/*-///////////////////////////////////////NEW-PASSWORD/////////////////////////////////////*/
+
+.set-password {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: left;
+    border-bottom: 2px solid rgb(141, 138, 138);
+    padding: 8px 15px;
+    width: 200px;
+    outline: none;
+    border-radius: 0;
+    transition: 0.25s;
+}
+
+.set-password:focus {
+    width: 300px;
+    border-color: #2946ec;
+}
+
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 0%;
+    margin-top: 680px;
+}
+.fa-heart-o
+{
+    margin: 3px;
+    color: red;
+}

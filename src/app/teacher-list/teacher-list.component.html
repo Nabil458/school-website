@@ -1,0 +1,47 @@
+<div class="wrap">
+ <div>
+      <label>Filter filiére: &nbsp; </label>
+<input [(ngModel)]='mat' class="searchbox">
+<button type="button" (click)="onFiliFilter()"class="btn btn-primary ">Search</button>
+<button type="button" (click)="onFiliFilterClear()"class="btn btn-primary ">Clear</button> &nbsp;
+
+<label >Tri par &nbsp;</label>
+<select [(ngModel)] = 'SortbyParam' class="yes">
+  <option value="mat">filiére</option>
+  <option value="name">name</option>
+</select>
+<button type="button" class="btn btn-outline-primary" (click) = "onSortDirection()">
+  <i *ngIf="SortDirection==='asc'" class="gg-arrow-up-o"></i>
+  <i *ngIf="SortDirection==='desc'"  class="gg-arrow-down-o"></i>
+</button>
+    </div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">numéro</th>
+          <th scope="col">photo</th>
+          <th scope="col">filiére</th>
+          <th scope="col">name</th>
+          <th scope="col">téléphone</th>
+          <th scope="col">email</th>
+        </tr>
+      </thead>
+       <tbody>
+          <tr *ngFor="let fe of listprof|filter:Searchmat:'mat'|sort:[SortbyParam,SortDirection] ; let i = index;">
+          <th scope="row">{{i+1}}</th>
+          <td scope="row"><img id="img" src={{fe.photo}}></td>
+          <td>{{fe.mat}}</td>
+          <td>{{fe.name}}</td>
+          <td>{{fe.numtel}}</td>
+          <td>{{fe.email}}</td>
+          </tr>
+        </tbody>
+        </table>
+     </div>
+<!---------footer---------->
+<section id="footer">
+  <div class="container text-center">
+      <p>Made By me<i class="gg-code-climate"></i></p>
+  </div>
+</section>
+

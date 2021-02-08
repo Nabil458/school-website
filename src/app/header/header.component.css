@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://css.gg/facebook.css');
+
+#nav-bar
+{
+position:sticky;
+top: 0%;
+z-index: 10;
+}
+.navbar-brand img
+{
+    height: 40px;
+    padding-left: 10px;
+    margin-top: -10px;
+  
+}
+.navbar-nav li
+{
+padding: 0 10px;
+}
+.navbar-nav li
+{
+float: left;
+text-align: right;
+}
+#nav-bar ul li a:hover
+{
+    color: black!important;
+}
+.navbar
+{
+    background-color:#56CCF2;
+}
+.navbar-toggle
+{
+    border:none!important;
+}
+.nav-link
+{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}

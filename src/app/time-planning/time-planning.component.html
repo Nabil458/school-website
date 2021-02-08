@@ -1,0 +1,37 @@
+<div class='demo-app'>
+  <div class='demo-app-sidebar'>
+    <div class='demo-app-sidebar-section'>
+        <label>
+          <input
+            type='checkbox'
+            [checked]='calendarVisible'
+            (change)='handleCalendarToggle()'
+          />
+          toggle whole calendar
+        </label>
+      </div>
+      <div class='demo-app-sidebar-section'>
+        <label>
+          <input
+            type='checkbox'
+            [checked]='calendarOptions.weekends'
+            (change)='handleWeekendsToggle()'
+          />
+          toggle weekends
+        </label>
+      </div>
+    </div>
+
+    <div class='demo-app-main'>
+      <full-calendar
+        *ngIf='calendarVisible'
+        [options]='calendarOptions'
+      ></full-calendar>
+    </div>
+  </div>
+<!---------footer---------->
+<section id="footer">
+  <div class="container text-center">
+      <p>Made By me<i class="gg-code-climate"></i></p>
+  </div>
+</section>

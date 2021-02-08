@@ -1,0 +1,44 @@
+   <!-----------------class="nav-item" -----------------bootstrap4------------------------------------------------>
+   <div class='demo-app'>
+    <div class='demo-app-sidebar'>
+      <div class="sidebar-item sidebar-brand">
+      <h1>Profile</h1>
+    </div>
+    <!-- sidebar-header  -->
+
+        <div class="user-pic">
+            <img class="img-responsive img-rounded" src="./assets/image/user.jpg" alt="User picture">
+        </div>
+        <div class="user-info">
+            <span class="user-role">Student</span>
+            <span class="user-status">
+              <span class="demoSpan1"></span>
+            </span>
+        </div>
+
+        <div class='demo-app-sidebar-section'>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item"  >
+              <a class="nav-link" routerLink="/personel-space/lesson">Commencer une formation</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link fixe" routerLink="/personel-space/teacher">Contacter un enseignant</a>
+            </li>
+           </ul>
+        </div>
+      </div>
+
+      <div class='demo-app-main'>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+  <!---------footer---------->
+  <section id="footer">
+    <div class="container text-center">
+        <p>Made By me<i class="gg-code-climate"></i></p>
+    </div>
+  </section>
+
+
+
